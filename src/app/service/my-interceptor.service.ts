@@ -26,7 +26,6 @@ export class MyInterceptorService implements HttpInterceptor {
       catchError((err: HttpErrorResponse) => {
         if (err.status === 404) {
           console.log("Este es un error 404 ¿que desea realizar?");
-
         }
         return throwError(err);
       })
