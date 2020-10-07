@@ -13,6 +13,7 @@ export class AppComponent {
   }
   peticion(peticion: number) {
     this.requesService.getPost(peticion).subscribe(data => {
+      console.log("****data*****");
       console.log(data);
     })
   }

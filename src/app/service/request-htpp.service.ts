@@ -8,6 +8,6 @@ export class RequestHtppService {
   constructor(private http: HttpClient) { }
 
   getPost(peticion: number) {
-    return this.http.get("https://jsonplaceholder.typicode.com/todosss/" + peticion);
+    return this.http.get("https://jsonplaceholder.typicode.com/todos/" + peticion);
   }
 }
